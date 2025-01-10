@@ -7,7 +7,7 @@ function y = mvggd(X, Mu, Sigma, Beta)
 %   correspond to variables or coordinates.  Y is an N-by-1 vector.
 %
 %   Y = MVGGD(X,MU) returns the density of the multivariate GGD with mean 
-%   MU, identity covariance matrix, and BETA equal to 1, evaluated at each
+%   MU, identity covariance matrix, and unitary shaping, evaluated at each
 %   row of X.  MU is a 1-by-D vector, or an N-by-D matrix, in which case 
 %   the density is evaluated for each row of X with the corresponding row 
 %   of MU.  MU can also be a scalar value, which MVGGD replicates to match 
@@ -25,14 +25,13 @@ function y = mvggd(X, Mu, Sigma, Beta)
 %   value when you want to only specify SIGMA.
 %
 %   Y = MVGGD(X,MU,SIGMA,BETA) returns the density of the multivariate GGD 
-%   with mean MU, covariance SIGMA, and BETA, evaluated at each row of X.  
-%   BETA is a scalar, or an N-by-1 vector, in which case 
-%   the density is evaluated for each row of X with the corresponding row 
-%   of BETA.
+%   with mean MU, covariance SIGMA, and shaping BETA, evaluated at each row 
+%   of X. BETA is a scalar, or an N-by-1 vector, in which case the density 
+%   is evaluated for each row of X with the corresponding row of BETA.
 %
 %   If X is a 1-by-D vector, MVGGD replicates it to match the leading
 %   dimension of MU or the trailing dimension of SIGMA. If BETA = 1, MVGGD
-%   becomes MVNPDF
+%   becomes MVNPDF.
 %
 %   Example:
 %
