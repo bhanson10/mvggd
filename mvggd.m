@@ -41,7 +41,8 @@ function y = mvggd(X, Mu, Sigma, Beta)
 %      X = [X1(:) X2(:)];
 %      y = mvggd(X, mu, Sigma, Beta);
 %      surf(X1,X2,reshape(y,25,25));
-
+%
+% Copyright 2025 by Benjamin L. Hanson, published under BSD 2-Clause License.
 
 if nargin<1
     error(message('stats:mvggd:TooFewInputs'));
