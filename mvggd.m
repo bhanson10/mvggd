@@ -29,7 +29,7 @@ function y = mvggd(X, Mu, Sigma, Beta)
 %   of X. BETA is a scalar, or an N-by-1 vector, in which case the density 
 %   is evaluated for each row of X with the corresponding row of BETA.
 %
-%   If X is a 1-by-D vector, MVGGD replicates it to match the leading
+%   If X is 1-by-D vector, MVGGD replicates it to match the leading
 %   dimension of MU or the trailing dimension of SIGMA. If BETA = 1, MVGGD
 %   becomes MVNPDF.
 %
