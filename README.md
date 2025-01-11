@@ -13,4 +13,4 @@ $$
 When $\beta = 1$, *mvggd.m* becomes *mvnpdf.m*. Please direct any questions to blhanson@ucsd.edu. <br><br>
 
 ## References
-[1](https://www.tandfonline.com/doi/full/10.1080/03610926.2024.2439999#abstract) L. Hanson, B., Zhao, M., & Thomas, R. B. (2025). An extensible framework for the probabilistic search of stochastically-moving targets characterized by generalized Gaussian distributions or  experimentally-defined regions of interest. Communications in Statistics - Theory and Methods, 1–26. https://doi.org/10.1080/03610926.2024.2439999
+[1] L. Hanson, B., Zhao, M., & Thomas, R. B. (2025). An extensible framework for the probabilistic search of stochastically-moving targets characterized by generalized Gaussian distributions or  experimentally-defined regions of interest. Communications in Statistics - Theory and Methods, 1–26. https://doi.org/10.1080/03610926.2024.2439999
