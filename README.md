@@ -3,9 +3,9 @@ The MVGGD repository provides MATLAB code for calculating the probability densit
 
 $$
 \begin{gather}
-    p(\mathbf{x}|\boldsymbol{\mu},\Sigma,\beta) =  A_{\beta,d}
-    \exp\{-[B_{\beta,d}(\mathbf{x}-\boldsymbol{\mu})^T \Sigma^{-1}(\mathbf{x}-\boldsymbol{\mu})]^{\beta}\},
+    p(\mathbf{x}|\boldsymbol{\mu},\Sigma,\beta) =  A(\beta,d)
+    \exp\{-[B(\beta,d)(\mathbf{x}-\boldsymbol{\mu})^T \Sigma^{-1}(\mathbf{x}-\boldsymbol{\mu})]^{\beta}\},
     \\ 
-    \text{where}\quad A_{\beta,d}= \Big(\frac{B_{\beta,d}}{\pi}\Big)^{\frac{d}{2}}\cdot\frac{\Gamma(\frac{d}{2})\beta}{\Gamma(\frac{d}{2\beta})|\Sigma|^{\frac{1}{2}}}\quad\text{and}\quad B_{\beta,d}= \frac{\Gamma(\frac{d+2}{2\beta})}{d\Gamma(\frac{d}{2\beta})}, 
+    \text{where}\quad A(\beta,d)= \Big(\frac{B(\beta,d)}{\pi}\Big)^{\frac{d}{2}}\cdot\frac{\Gamma(\frac{d}{2})\beta}{\Gamma(\frac{d}{2\beta})|\Sigma|^{\frac{1}{2}}}\quad\text{and}\quad B(\beta,d)= \frac{\Gamma(\frac{d+2}{2\beta})}{d\Gamma(\frac{d}{2\beta})}, 
 \end{gather}
 $$
