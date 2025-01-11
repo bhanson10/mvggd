@@ -40,6 +40,13 @@ function y = mvggd(X, Mu, Sigma, Beta)
 %      X = [X1(:) X2(:)];
 %      y = mvggd(X, mu, Sigma, Beta);
 %      surf(X1,X2,reshape(y,25,25));
+%   
+%   References:
+%      L. Hanson, B., Zhao, M., & Thomas, R. B. (2025). An extensible 
+%      framework for the probabilistic search of stochastically-moving 
+%      targets characterized by generalized Gaussian distributions or 
+%      experimentally-defined regions of interest. Communications in 
+%      Statistics - Theory and Methods, 1–26. https://doi.org/10.1080/03610926.2024.2439999
 %
 % Copyright 2025 by Benjamin L. Hanson, published under BSD 2-Clause License.
 
@@ -260,4 +267,5 @@ function y = adjustSolutionGivenMu(y, Mu, infInXRow, nanInXRow)
     nanInMuRow = any(isnan(Mu),2); % Find rows with NaN in Mu
     y(xor(infInXRow, infInMuRow) & ~nanInXRow & ~nanInMuRow) = 0; % Replace incorrect NaNs with 0
 end
+
 
