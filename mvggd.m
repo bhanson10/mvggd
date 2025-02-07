@@ -36,13 +36,13 @@ function y = mvggd(X, Mu, Sigma, Beta)
 %   Example:
 %
 %      mu = [1 -1]; Sigma = [.9 .4; .4 .3]; Beta = 2.2; 
-%      [X1,X2] = meshgrid(linspace(-2,5,25)', linspace(-3,1,25)');
+%      [X1,X2] = meshgrid(linspace(-2,5,100)', linspace(-3,1,100)');
 %      X = [X1(:) X2(:)];
 %      y = mvggd(X, mu, Sigma, Beta);
-%      surf(X1,X2,reshape(y,25,25));
+%      surf(X1,X2,reshape(y,100,100));
 %   
 %   References:
-%      L. Hanson, B., Zhao, M., & Thomas, R. B. (2025). An extensible 
+%      L. Hanson, B., Zhao, M., & R. Bewley, T. (2025). An extensible 
 %      framework for the probabilistic search of stochastically-moving 
 %      targets characterized by generalized Gaussian distributions or 
 %      experimentally-defined regions of interest. Communications in 
